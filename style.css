@@ -1,0 +1,309 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'open sans','poppins';
+}
+body{
+    background-color: black;
+}
+.front-page{
+    position: relative;
+    background-image: url(images/Background\ Image.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:max(900px,100vw);
+    height: 110vh;
+    position: relative;
+}
+.main .box{
+    height: 110vh;
+    width: 100%;
+    opacity: 0.75;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+.main nav{
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 93px;
+    margin-bottom: 55px;
+}
+
+.main nav span img{
+    min-width: 150px;
+    align-self: center;
+    position: relative;
+    filter: brightness(0.8);
+    z-index: 10;
+}
+.sign-in{
+    position: relative;
+    z-index: 10;
+    padding: 7px;
+    border-radius: 4px;
+    background-color: rgba(255, 5, 5, 0.797);
+    color: white;
+    border: 0;
+    font-size: 17px;
+    text-wrap: nowrap;
+}
+#language{
+    position: relative;
+    z-index: 10;
+    padding: 7px;
+    border-radius: 4px;
+    background-color: rgba(20, 18, 18, 0.592);
+    color: white;
+    border: solid rgba(255, 255, 255, 0.26) 1px;
+}
+.sub-nav{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.center-text{
+    height: 65%;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    width: 70vw;
+    margin: auto;
+    
+    position: relative;
+    gap: 12px;
+    padding: 15px;
+    
+}
+.center-text span:nth-child(1){
+    font-size: 44px;
+    font-weight: 900;
+    margin-bottom: 16px;
+    text-align: center;
+}
+.center-text span:nth-child(2){
+    font-size: 24px;
+    margin-bottom: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+.center-text span:nth-child(3){
+    font-size: 20px;
+    font-weight: 400;
+    line-height:30px;
+    text-align: center;
+}
+.input-info{
+     display: flex;
+    justify-content: center;
+    align-items: last baseline;
+    gap: 10px;
+    max-width: 200px;
+}
+.input input{
+    padding: 20px;
+    padding-right: 140px;
+    border: solid rgba(255, 255, 255, 0.21) 1px;
+    background-color: rgba(20, 18, 18, 0.592);
+    border-radius: 4px;
+    margin-top: 15px;
+    /* align-items: center; */
+}
+
+#get-started{
+    padding: 18px;
+    border-radius: 4px;
+    background-color: rgba(255, 5, 5, 0.797);
+    color: white;
+    border: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-wrap: nowrap;
+    /* align-items: center; */
+}
+.curve{
+    z-index: 12;
+    height: 100px;
+    border-bottom: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* border-top: 0.25rem solid ; */
+    overflow: hidden;
+     
+    border-image: linear-gradient(
+        to right,
+        rgba(33, 13, 22, 1) 18%,
+        rgba(184, 40, 105, 1),
+        rgba(229, 9, 20, 1),
+        rgba(184, 40, 105, 1),
+        rgba(33, 13, 22, 1) 84%
+    );
+    
+    border-top-left-radius: 53% 100%;
+    border-top-right-radius: 53% 100%;
+    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+    
+}
+.features{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* min-width: 80vw; */
+    margin: 0 7%;
+    z-index: 10;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: block;
+}
+.boxes{
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    /* gap: 14px; */
+}
+/* @media only screen and (max-width:1170px) {
+    .boxes{
+        
+    }
+    
+} */
+.headline{
+    width: 80vw;
+    padding: 20px 0; 
+    font-size: 24px;
+    font-weight: 600;
+}
+.feat{
+    height: 300px ;
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    border-radius: 20px;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 25px;
+    position: relative;
+    max-width: 300px;
+
+}
+.feat div{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.faq{
+    width: 80vw;
+    margin:auto;
+    z-index: 10;
+    color: white;
+
+}
+
+.questions{
+    width: 64vw;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    justify-content: center;
+    /* align-items: center; */
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+.question{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(45, 45, 45);
+    padding: 23px;
+    font-size: 24px;
+    font-weight: 400;
+}
+.plus{
+    font-size: 10px;
+}
+.title{
+    padding: 30px 30px 30px 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+.bottom{
+    width: 80vw;
+    margin:auto;
+    z-index: 10;
+    color: white;
+    display: flex;
+     align-items: center;
+    justify-content: center;
+}
+.bottom div:nth-child(1){
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    align-items: center;
+}
+
+.email-button{
+    display: flex;
+    max-width: 80vw;
+    margin:auto;
+    z-index: 10;
+    padding: 15px 15px 15px 0;
+    align-items: center;
+    gap: 7px;
+}
+.email-button input{
+    padding: 20px;
+    padding-right: 618px;
+    border: solid rgba(255, 255, 255, 0.21) 1px;
+    background-color: rgba(20, 18, 18, 0.592);
+    border-radius: 4px;
+}
+.email-button button{
+    padding: 17px;
+    border-radius: 4px;
+    background-color: rgba(255, 5, 5, 0.797);
+    color: white;
+    border: 0;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    text-wrap: nowrap;
+}
+
+footer{
+    /* display: flex; */
+    color: rgba(255, 255, 255, 0.736);
+    width: 80vw;
+    margin: auto;
+    /* flex-direction: column; */
+}
+#one{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 20px;
+}
+.end{
+    max-width: 80vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    line-height: 40px;
+    padding: 20px;
+}
+.end a,footer a{
+    color: rgba(255, 255, 255, 0.726);
+}
+.end-btn{
+    padding: 20px;
+}
